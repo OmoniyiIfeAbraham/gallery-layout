@@ -1,0 +1,25 @@
+#test {
+    display: inline-block;
+    position: relative;
+    transition: .3s;
+}
+
+#test:hover img{
+    filter: blur(5px) brightness(100%);
+    /* box-shadow: 0 0 16px rgb(213, 217, 217); */
+}
+
+#test :not(img){
+    position: absolute;
+    /* z-index: -1; */
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    opacity: 0;
+    transition: .3s;
+}
+
+#test:hover :not(img){
+    opacity: 1;
+}
